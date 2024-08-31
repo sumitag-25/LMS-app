@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- start css links -->
+     <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+     <link rel="stylesheet" href="../assets/css/animate.css">
+     <link rel="stylesheet" href="css/index.css">
+     <link rel="stylesheet" href="../assets/css/tailwind.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- end css link -->
+
+    <!-- start js links -->
+     <script src="../assets/js/bootstrap.bundle.js"></script>
+     <script src="../assets/js/sweetalert.js"></script>
+     <script src="../assets/js/apexcharts.js"></script>
+    <!-- end js links -->
+    <title>admin panel</title>
+</head>
+<body>
+    <div class="side-nav active">
+        <div class="logo d-flex align-items-center gap-2 p-4">
+            <img src="../assets/images/logo.png" alt="logo" width="60" height="60">
+            <h6>Education World</h6>
+        </div>
+        <ul>
+            <li class="image-items active" to="#/">
+                <i class="fa fa-dashboard"></i>
+                Dashboad
+            </li>
+            <li class="image-items" to="#/courses">
+                <i class="fa fa-book"></i>
+                Courses
+            </li>
+            <li class="image-items" to="#/topics">
+                <i class="fa-solid fa-camera-retro"></i>
+                Topics
+            </li>
+            <li class="image-items" to="#/chapters">
+                <i class="fa-solid fa-book-open"></i>
+                Chapters
+            </li>
+            <li class="image-items" to="#/users">
+                <i class="fa fa-user"></i>
+                Users
+            </li>
+            <li class="image-items" to="#/settings">
+                <i class="fa-solid fa-gear"></i>
+                Settings
+            </li>
+            <li class="image-items" to="#/logout">
+                <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                LogOut
+            </li>
+        </ul>
+    </div>
+    <div class="page-content active">
+        <div class="navbar bg-white shadow-sm sticky-top">
+            <div class="container-fluid">
+                <button class="btn toggle-btn">
+                    <i class="fa fa-align-left"></i>
+                </button>
+                <div class="flex gap-4">
+                    <button class="btn rounded-full bg-green-100 text-green-600">
+                        <i class="fa-regular fa-envelope"></i>
+                    </button>
+                    <button class="btn rounded-full bg-red-100 text-red-600 position-relative">
+                        <i class="fa-regular fa-bell"></i>
+                        <span class="position-absolute bg-danger text-white rounded top-1 start-100 translate-middle "> 99+ </span>
+                    </button>
+                    <button class="btn rounded-full bg-red-400 text-white">
+                        A
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="page p-4">
+            
+        </div>
+    </div>
+    <script src="js/index.js" type="module"></script>
+</body>
+</html>

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- start css links -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="assets/css/tailwind.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- end css link -->
+
+    <!-- start js links -->
+    <script src="assets/js/bootstrap.bundle.js"></script>
+    <script src="assets/js/sweetalert.js"></script>
+    <script src="assets/js/apexcharts.js"></script>
+    <!-- end js links -->
+    <title>Home page</title>
+</head>
+
+<body>
+    
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Just for code</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarScroll">
+                <ul class="navbar-nav ms-auto my-2 mx-3 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                    <li class="nav-item menu-items" to="#/">
+                        <a class="nav-link disabled" href="#/" tabindex="-1">
+                            Home
+                        </a>
+                    </li>
+                    <li class="nav-item menu-items" to="#/courses">
+                        <a class="nav-link disabled" href="#/courses" tabindex="-1">
+                            Courses
+                        </a>
+                    </li>
+                    <li class="nav-item menu-items" to="#/register">
+                        <a class="nav-link disabled" href="#/register" tabindex="-1">
+                            Register
+                        </a>
+                    </li>
+                    <li class="nav-item menu-items" to="#/login">
+                        <a class="nav-link disabled" href="#/login" tabindex="-1">
+                            Login
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <button class="btn rounded-full bg-red-100 text-red-600 position-relative">
+                            <i class="fa-regular fa-bell"></i>
+                            <span class="position-absolute bg-danger text-white rounded top-1 start-100 translate-middle "> 99+ </span>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="page min-h-auto p-4 bg-gray-100 ">
+        
+    </div>
+
+    <footer class="bg-white-200 p-4">
+        <div class="grid md:grid-cols-4 gap-3">
+            <div class="flex flex-col gap-3">
+                <div class="flex gap-x-2">
+                    <div>
+                        <img src="assets/images/logo.png" width="50" alt="">
+                    </div>
+                    <div>
+                        <h1 class="font-bold text-xl">
+                            Just for code
+                        </h1>
+                        <p class="font-semibold">
+                            an international brand for coding
+                        </p>
+                    </div>
+                </div>
+                <div class="flex items-center gap-3">
+                    <button class="btn bg-blue-100 rounded-full text-blue-600">
+                        <i class="fa fa-phone"></i>
+                    </button>
+                    <p>+91 76345678765</p>
+                    <p>+91 76345678765</p>
+                </div>
+                <div class="flex items-center gap-3">
+                    <button class="btn bg-red-100 rounded-full text-red-600">
+                        <i class="fa-brands fa-youtube"></i>
+                    </button>
+                    <button class="btn bg-blue-200 rounded-full text-blue-600">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </button>
+                    <button class="btn bg-green-100 rounded-full text-green-600">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </button>  
+                </div>
+            </div>
+            <div>
+                <h1 class="font-semibold mb-3">Navlink</h1>
+                <ul class="nav flex flex-col gap-y-3">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link ps-0">
+                            Home
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link ps-0">
+                            Login
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link ps-0">
+                            Register
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link ps-0">
+                            Notification
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h1 class="font-semibold mb-3">Youtube Videos</h1>
+                <ul class="nav flex flex-col gap-y-3">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link ps-0">
+                            Name
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link ps-0">
+                            Name
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link ps-0">
+                            Name
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link ps-0">
+                            Name
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h1 class="font-semibold mb-3">Devtools</h1>
+                <ul class="nav flex flex-col gap-y-3">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link ps-0">
+                            Stackoverflow
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link ps-0">
+                            Hoisting checker
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link ps-0">
+                            DNS checker
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link ps-0">
+                            Coding solution
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </footer>
+    <script src="js/index.js" type="module"></script>
+</body>
+
+</html>

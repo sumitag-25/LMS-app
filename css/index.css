@@ -1,0 +1,29 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.page .not-found{
+    animation: swing;
+    animation-duration: 1s;
+
+}
+
+.page .not-found h1{
+    font-size: 80px;
+}
+
+.page .not-found button{
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    background-color: rgb(255, 80, 80);
+    color: #fff;
+}
+
+.page .not-found button:hover{
+    background-color: rgba(255, 93, 93, 0.884);
+    color: #fff;
+}
+

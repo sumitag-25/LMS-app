@@ -1,0 +1,98 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.side-nav{
+    background-color: #fff;
+    min-height: 100vh;
+    width: 0%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: 0.3s ease;
+}
+
+.side-nav.active{
+    width: 15%;
+    opacity: 1;
+}
+
+.page-content{
+    background-color: #e5e7eb;
+    width: 100%;
+    min-height: 100vh;
+    margin-left: 0;
+    transition: 0.3s ease;
+}
+
+.page-content.active{
+    width: 85%;
+    margin-left: 15%;
+}
+
+.page-content .navbar{
+    height: 60px !important;
+}
+
+.btn{
+    box-shadow: none!important;
+    border: none!important;
+}
+
+.side-nav ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    cursor: pointer;
+}
+
+.side-nav ul li{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 16px 16px 16px 16px;
+    margin: 0px 20px;
+}
+
+.side-nav ul li.active{
+    background-color: rgb(255, 80, 80);
+    color: #fff;
+}
+
+.side-nav ul li:hover{
+    background-color: rgba(255, 93, 93, 0.884);
+    color: #fff;
+    transition: .3s ease;
+}
+
+.side-nav ul li.active{
+    background-color: rgb(255, 80, 80);
+    color: #fff;
+}
+
+.page .not-found{
+    animation: swing;
+    animation-duration: 1s;
+
+}
+
+.page .not-found h1{
+    font-size: 80px;
+}
+
+.page .not-found button{
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    background-color: rgb(255, 80, 80);
+    color: #fff;
+}
+
+.page .not-found button:hover{
+    background-color: rgba(255, 93, 93, 0.884);
+    color: #fff;
+}

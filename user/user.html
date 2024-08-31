@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- start css links -->
+     <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+     <link rel="stylesheet" href="../assets/css/animate.css">
+     <link rel="stylesheet" href="css/index.css">
+     <link rel="stylesheet" href="../assets/css/tailwind.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- end css link -->
+
+    <!-- start js links -->
+     <script src="../assets/js/bootstrap.bundle.js"></script>
+     <script src="../assets/js/sweetalert.js"></script>
+     <script src="../assets/js/apexcharts.js"></script>
+    <!-- end js links -->
+    <title>user panel</title>
+</head>
+<body>
+    <div class="side-nav active">
+        <div class="logo d-flex align-items-center gap-2 p-4">
+            <img class="profile" src="../assets/images/logo.png" alt="logo" width="60" height="60">
+            <h6  class="user-name" >Education World</h6>
+        </div>
+        <ul>
+            <li class="image-items active" to="#/">
+                <i class="fa fa-dashboard"></i>
+                Dashboad
+            </li>
+            <li class="image-items logout-btn" to="#/logout">
+                <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                LogOut
+            </li>
+        </ul>
+    </div>
+    <div class="page-content active">
+        <div class="navbar bg-white shadow-sm sticky-top">
+            <div class="container-fluid">
+                <button class="btn toggle-btn">
+                    <i class="fa fa-align-left"></i>
+                </button>
+                <div class="flex gap-4">
+                    <button data-bs-toggle="modal" data-bs-target="#user-m-modal" class="btn user-m-btn rounded-full bg-green-100 text-green-600">
+                        <i class="fa-regular fa-envelope"></i>
+                    </button>
+                    <button data-bs-toggle="modal" data-bs-target="#user-m-l-modal" class="btn rounded-full bg-red-100 text-red-600 position-relative">
+                        <i class="fa-regular fa-bell"></i>
+                        <span class="position-absolute bg-danger text-white rounded top-1 start-100 translate-middle count-msg"> 
+                        </span>
+                    </button>
+                    <button class="btn letter-name rounded-full bg-red-400 text-white"> 
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="page flex flex-col gap-y-6 p-4">
+            <div class="bg-white profile-box p-4">
+                <h3 class="font-bold text-2xl">Profile</h3>
+                <div class="my-4 flex gap-x-4 align-items-center">
+                    <img width="70" class="'rounded-full" src="https://www.justforcode.in/team/d-2.jpeg" alt="">
+                    <div>
+                        <h1 class="font-semibold mb-1">Suman</h1>
+                        <p>suman@gmail.com</p>
+                    </div>
+                </div>
+                <form class="grid md:grid-cols-3 gap-4">
+                    <div class="form-group flex flex-col">
+                        <input type="text" disabled >
+                        <label for="name">Father name</label>
+                    </div>
+                    <div class="form-group flex flex-col">
+                        <label for="name">Mobile</label>
+                        <input type="text" disabled >
+                    </div>
+                    <div class="form-group flex flex-col">
+                        <label for="name">Address</label>
+                        <input type="text" disabled >
+                    </div>
+                    <div class="form-group flex flex-col">
+                        <label for="name">Type</label>
+                        <input type="text" disabled >
+                    </div>
+                    <div class="form-group flex flex-col">
+                        <label for="name">Courses</label>
+                        <input type="text" disabled >
+                    </div>
+                    <div class="form-group flex flex-col">
+                        <label for="name">Password</label>
+                        <input type="text" disabled >
+                    </div>
+                    <div class="form-group flex flex-col">
+                        <label for="name">Status</label>
+                        <input type="text" disabled >
+                    </div>
+                    <div class="form-group flex flex-col">
+                        <label for="name">Price</label>
+                        <input type="text" disabled >
+                    </div>
+                    <div class="form-group flex flex-col">
+                        <label for="name">Created at</label>
+                        <input type="text" disabled >
+                    </div>
+                </form>
+            </div>
+            <div>
+                <h1 class="font-bold text-2xl">Courses</h1>
+                <div class="course-list grid md:grid-cols-3 gap-4">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="modal animate__animated animate__zoomIn" id="user-m-modal">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="text-xl font-semibold">Create new message</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form class="user-m-form">
+                        <div class="mb-3 form-group">
+                            <label for="form">From<sup class="text-red-400">*</sup></label>
+                            <input required class="form-control" readonly value="user" type="text" name="type">
+                        </div>
+                        <div class="mb-3 form-group">
+                            <label for="name">User name<sup class="text-red-400">*</sup></label>
+                            <input name="name" readonly  class="form-control" type="text" >
+                        </div>
+                        <div class="mb-3 form-group">
+                            <label for="email">User email<sup class="text-red-400">*</sup></label>
+                            <input name="email" readonly  class="form-control" type="email" >
+                        </div>
+                        <div class="mb-3 form-group">
+                            <label for="title">Title<sup class="text-red-400">*</sup></label>
+                            <input name="title" required class="form-control" type="text" >
+                        </div>
+                        <div class="mb-3 form-group">
+                            <label for="message">Message<sup class="text-red-400">*</sup></label>
+                            <textarea name="messsage" class="form-control" id=""></textarea>
+                        </div>
+                        <div class="mb-3 form-group">
+                            <button type="submit" class="btn w-full bg-blue-400 text-white">
+                                Submit
+                            </button>
+                            <button type="button" class="d-none btn w-full bg-red-400 text-white">
+                                Update
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal animate__animated animate__zoomIn" id="user-m-l-modal">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="text-xl font-semibold">Message List</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body table-responsive">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th class="text-nowrap">Sr.</th>
+                                <th class="text-nowrap">Title</th>
+                                <th class="text-nowrap">Message</th>
+                                <th class="text-nowrap">Date</th>
+                                <th class="text-nowrap">Action</th>
+                            </tr>
+                        </thead>
+                        <tbody class="user-msg-list">
+                            
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/index.js" type="module"></script>
+</body>
+</html>
